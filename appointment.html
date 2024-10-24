@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Booking</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            background-image: url(/backgroung-pattern-1.png);
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #ccceda;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         
+        }
+        h1 {
+            text-align: center;
+            color: #941212;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            width: 95%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        .nav{
+    height:50px;
+    width:auto;
+    background-color:white;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    
+    
+    
+   
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin:0 15px ;
+    margin-right: 25px;
+    font-size: 20px;
+}
+.nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px; 
+    transition: all 0.3s ease-in-out;
+    color: green;
+  }
+  .nav a.active{
+    background-color: rgb(47, 196, 255);
+    padding: 10px;
+}
+.nav a:active{
+    color: darkorange;
+}
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <center>
+        <a href="Home.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="rating.html">Rating</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="appointment.html" class="active">Book appointment</a>
+        <a href="login.html">Login</a></center>
+    </div>
+    <div class="container">
+        <h1>Book an Appointment</h1>
+        <form id="appointmentForm" action="Home.html">
+            <label for="patientName">Patient Name</label>
+            <input type="text" id="patientName" name="patientName" required>
+
+            <label for="doctor">Select Doctor</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">--Select Doctor--</option>
+                <option value="dr_Emma">Dr. Emma</option>
+                <option value="dr_Joe">Dr. Joe</option>
+                <option value="dr_William">Dr. William</option>
+                <option value="dr_Elizabeth">Dr. Elizabeth</option>
+                <option value="dr_Oliver">Dr. Oliver </option>
+                <option value="dr_Olivia">Dr. Olivia</option>
+            </select>
+
+            <label for="date">Appointment Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Appointment Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+    <script>
+        alert("Appointment Booked Successfully")
+    </script>
+</body>
+</html>

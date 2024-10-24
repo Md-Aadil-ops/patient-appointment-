@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.about-us {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.image-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.text-section {
+    flex: 2;
+    padding: 20px;
+}
+
+.text-section h2 {
+    color: #007BFF;
+}
+
+.text-section p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+.nav{
+    height:50px;
+    width:100%;
+    background-color:white;
+    padding-top: 30px;
+    position: fixed;
+    
+   
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin:0 15px ;
+    margin-right: 25px;
+    font-size: 20px;
+}
+.nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px; 
+    transition: all 0.3s ease-in-out;
+    color: green;
+  }
+  .nav a.active{
+    background-color: rgb(47, 196, 255);
+    padding: 10px;
+
+  }
+  .doctors-section {
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    color: #007BFF;
+}
+
+.doctors {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.doctor-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.doctor-card h2 {
+    margin-top: 10px;
+    color: #333;
+}
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <center>
+        <a href="Home.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="rating.html">Rating</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="appointment.html" class="active">Book appointment</a></center>
+    </div><br><br><br><br><br><br>
+    <div class="about-us">
+        <h1>About Us</h1>
+        <div class="content">
+            <div class="image-section">
+                <img src="/about1.png" alt="Medical Professionals">
+            </div>
+            <div class="text-section">
+                <h2>We're Setting Standards In Research<br>What's More, Clinical Care.</h2>
+                <p>We Provide The Most Full Medical Services, So Every Person Could Have The Opportunity To Receive Qualitative Medical Help.</p>
+                <p>Our Clinic Has Grown To Provide A World Class Facility For The Treatment Of Tooth Loss, Dental Cosmetics And Bore Advanced Restorative Dentistry. We Are Among The Most Qualified Implant Providers In The AUS With Over 30 Years Of Quality Training And Experience.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+     <BR>
+    <div class="doctors-section">
+        <h1>Our Doctors</h1>
+        <div class="doctors">
+            <div class="doctor-card">
+                <img src="DOC2.png" alt="Doctor 1">
+                <h2>Dr Joe</h2>
+            </div>
+            <div class="doctor-card">
+                <img src="DOC1.png" alt="Doctor 2">
+                <h2>Dr Emma</h2>
+            </div>
+            <div class="doctor-card">
+                <img src="Screenshot 2024-10-12 230050.png" alt="Doctor 3">
+                <h2>Dr Elizabeth</h2>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="doctors-section">
+        <div class="doctors">
+            <div class="doctor-card">
+                <img src="doc4.jpg" alt="Doctor 1">
+                <h2>Dr William</h2>
+            </div>
+            <div class="doctor-card">
+                <img src="doc5.jpg" alt="Doctor 2">
+                <h2>Dr Oliver</h2>
+            </div>
+            <div class="doctor-card">
+                <img src="doc6.jpg" alt="Doctor 3">
+                <h2>Dr Olivia</h2>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>

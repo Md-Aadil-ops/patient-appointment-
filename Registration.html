@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('/loginpage.jpg.png');
+            background-size: cover;
+            padding: 2rem;
+        }
+
+        .form-container {
+            background: linear-gradient(30deg, #3561f8, #1ce2ee);
+            padding: 2rem;
+            border-radius: 30px;
+            box-shadow: 5px 5px 15px rgba(92, 92, 92, 0.3);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 1.5rem;
+            height: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 10px;
+            background: white;
+            font-size: 1rem;
+        }
+
+        .gender-group {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .gender-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+        }
+
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        select.input-field {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.5rem center;
+            background-size: 1.5em;
+            padding-right: 2.5rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 20px;
+            background: white;
+            color: #3561f8;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: aqua;
+            transform: translateY(-2px);
+        }
+
+        .submit-btn:active {
+            background: darkorange;
+            transform: translateY(0);
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .login-link span {
+            color: white;
+        }
+
+        .login-link a {
+            color: darkorange;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main class="form-container">
+        <img src="/logo3.png" alt="Company Logo" class="logo">
+        
+        <h1>Registration Form</h1>
+        
+        <form id="registrationForm"  >
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="input-field" required>
+            </div>
+
+            <div class="form-group" id="n2">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" class="input-field" required>
+            </div>
+
+            <div class="two-columns">
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="gender-group">
+                        <label class="gender-option">
+                            <input type="radio" name="gender" value="male" required>
+                            <span>Male</span>
+                        </label>
+                        <label class="gender-option">
+                            <input type="radio" name="gender" value="female">
+                            <span>Female</span>
+                        </label>
+                        <label class="gender-option">
+                            <input type="radio" name="gender" value="other">
+                            <span>Others</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" class="input-field" min="0" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" class="input-field" required>
+            </div>
+
+            <div class="form-group">
+                <label for="city">City</label>
+                <select id="city" class="input-field" required>
+                    <option value="" disabled selected>Select your city</option>
+                    <option value="jalandhar">Jalandhar</option>
+                    <option value="phagwara">Phagwara</option>
+                    <option value="ludhiana">Ludhiana</option>
+                    <option value="amritsar">Amritsar</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" class="input-field" rows="3" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" onclick=>Submit</button>
+
+            <div class="login-link">
+                <span>Already registered?</span>
+                <a href="login.html">Click here</a>
+            </div>
+        </form>
+    </main>
+
+    <script>
+        onsubmit
+        alert("Successfully Registered")
+    </script>
+    
+    
+</body>
+</html>
